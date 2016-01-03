@@ -26,5 +26,12 @@ int main(int argc, const char * argv[]) {
         l3 = l3->next;
     }
     std::cout << "Hello, World!\n";
+    delete l1->next->next;
+    delete l1->next;
+    delete l1;
+    delete l2->next->next;
+    delete l2->next;
+    delete l2;
+    
     return 0;
 }
